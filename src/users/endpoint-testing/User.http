@@ -1,0 +1,28 @@
+
+DELETE http://localhost:3000/users/3
+Accept: application/json
+
+GET http://localhost:3000/users
+Accept: application/json
+
+GET http://localhost:3000/users/1
+Accept: application/json
+
+
+POST http://localhost:3000/users
+Content-type: application/json
+
+{
+    "username": "Test",
+    "password": "Test12345"
+}
+
+
+PATCH http://localhost:3000/users/5
+Content-type: application/json
+
+{
+    "username": "Pedrito3pitos",
+    "password": "newpasswd"
+}
+
