@@ -1,0 +1,12 @@
+POST http://localhost:3000/suppliers
+Content-type: application/json
+
+{
+  "ruc": "22345678",
+  "bussiness_name": "Test1",
+  "contact_email": "test@gmail.com",
+  "contact_phone": "987654321"
+}
+
+GET http://localhost:3000/suppliers
+Accept: application/json

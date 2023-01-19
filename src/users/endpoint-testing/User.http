@@ -1,5 +1,4 @@
-
-DELETE http://localhost:3000/users/3
+DELETE http://localhost:3000/users/1
 Accept: application/json
 
 GET http://localhost:3000/users
@@ -13,10 +12,18 @@ POST http://localhost:3000/users
 Content-type: application/json
 
 {
-    "username": "Test",
+    "username": "Test3",
     "password": "Test12345"
 }
 
+POST http://localhost:3000/users/5/profile
+Content-type: application/json
+
+{
+        "first_name": "José Javier",
+        "last_name": "Huamán Medina",
+        "age": 23
+}
 
 PATCH http://localhost:3000/users/5
 Content-type: application/json

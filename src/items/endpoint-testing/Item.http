@@ -1,0 +1,37 @@
+DELETE http://localhost:3000/items/1
+
+
+PATCH http://localhost:3000/items/1
+Content-type: application/json;
+
+{
+  "user_id": 1,
+  "Item":  {
+  "reference": "100",
+  "description": "100",
+  "short_description": "3",
+  "category": "Prueba",
+  "stock": 2,
+  "unit_type": "UND" },
+}
+
+POST http://localhost:3000/items
+Content-type: application/json
+
+{
+  "user_id": 1,
+  "Item":  {
+  "reference": "100",
+  "description": "100",
+  "short_description": "100",
+  "category": "Prueba",
+  "supplier_id": 1,
+  "stock": 2,
+  "unit_type": "UND" }
+}
+
+GET http://localhost:3000/items/
+Accept: application/json
+
+GET http://localhost:3000/items/1
+Accept: application/json
